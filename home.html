@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+    <h1>Verificador de idade:</h1>
+    </header>
+
+    <section>
+    <div id="msg">
+        <p>Data de Nascimento:
+        <input type="number" name="ano" id="nasc" maxlength="4" placeholder="Digite o ano..." >
+        </p>
+    </div>
+    <div class="main">
+        <p>Sexo:
+            <input type="radio" name="sexo" id="mas" checked> <!--checked já coloca um valor automaticamente-->
+            <label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem"> <!--name em input radio, tem que ser o mesmo. verificamos com [0], [1]..-->
+            <label for="fem">Feminino</label>
+        </p>
+        <input type="button" class="button" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="res">
+        <p class="par">Preencha todos os dados para ver o resultado!</p>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; Lennon Fonseca</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
